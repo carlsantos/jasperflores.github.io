@@ -40,13 +40,13 @@ $(document).ready(function () {
 
   /* WINDOWS.SCROLLTOP */
    $(window).scroll(function(){
-      if ($(document).scrollTop() > 500) {
-        $('.hamb-top, .hamb-middle, .hamb-bottom').css({"background-color":"black", "margin-right":"20%"}); 
+      if ($(document).scrollTop() > 80) {
+        $('.hamburger').css({"background-color":"black", "margin-left":"20%"}); 
        
       }
       else 
       {
-         $('.hamb-top, .hamb-middle, .hamb-bottom').css({"background-color":"white"}); 
+         $('.hamburger').css({"background-color":"transparent"}); 
          $('.hamburger-container').css({"background-color":"transparent"});
       }
    });

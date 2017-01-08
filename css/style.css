@@ -8,8 +8,8 @@
     height: 100%;
     z-index: 9999;
     background: url(../content/img/loading-img/loader-64x/Preloader_2.gif) center no-repeat #fff;
-    
 }
+
 .jumbotron {
   height: 100%;
   width: 100%;
@@ -53,9 +53,9 @@
   100%     { bottom:0; }
 }
 
-#about { color: #000; }
+#about { color: #000;}
 .about-panel { padding:0; }
-.left-panel-img, .right-panel-img { padding: 0; }
+.left-panel-img, .right-panel-img { padding: 0; z-index: -1;}
 
 .left-panel-img > img,
 .right-panel-img > img {

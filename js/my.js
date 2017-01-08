@@ -40,12 +40,14 @@ $(document).ready(function () {
 
   /* WINDOWS.SCROLLTOP */
    $(window).scroll(function(){
-      if ($(document).scrollTop() > 200) {
-        $('.hamburger-container').css({"border-radius":"50px", "background-color":""});
-        
+      if ($(document).scrollTop() > 500) {
+        $('.hamb-top, .hamb-middle, .hamb-bottom').css({"background-color":"black", "margin-right":"20%"}); 
+       
       }
-      else {
-        $('.hamburger-container').css({"background-color":"transparent"});
+      else 
+      {
+         $('.hamb-top, .hamb-middle, .hamb-bottom').css({"background-color":"white"}); 
+         $('.hamburger-container').css({"background-color":"transparent"});
       }
    });
 

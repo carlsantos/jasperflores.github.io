@@ -43,7 +43,7 @@ html {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  background: #1a1a1a;
+  background: #191919;
   height: 100%;
   left: 220px;
   margin-left: -220px;
@@ -72,7 +72,7 @@ html {
   position: absolute;
   top: 0;
   width: 240px;
-
+  z-index: 999;
 }
 .sidebar-nav li {
   display: inline-block;
@@ -155,9 +155,8 @@ html {
 .hamburger-container{ 
   width: 55px;
   height: 45px;
-
+ 
 }
-
 .hamburger {
   background: transparent;
   border: none;
@@ -170,6 +169,7 @@ html {
   width: 32px;
   z-index: 999;
   padding-bottom: 25px;
+  
 }
 .hamburger:hover {
   outline: none;
@@ -191,7 +191,7 @@ html {
   opacity: 0;
   text-align: center;
   width: 100px;
-  border:1px solid red;
+  
 }
 .hamburger.is-closed:hover before {
   -webkit-transform: translate3d(-100px, 0, 0);
@@ -236,7 +236,8 @@ html {
   left: 0;
   position: absolute;
   width: 100%;
-  margin-left: 55%;
+  margin-left: 50%;
+
 }
 .hamburger.is-open .hamb-top {
   -webkit-transform: rotate(45deg);
@@ -274,7 +275,7 @@ html {
   line-height: 32px;
   opacity: 0;
   text-align: center;
-  width: 100px;
+  width: 100px; 
 }
 .hamburger.is-open:hover before {
   -webkit-transform: translate3d(-100px, 0, 0);

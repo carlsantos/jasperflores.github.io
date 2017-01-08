@@ -40,7 +40,7 @@ $(document).ready(function () {
 
   /* WINDOWS.SCROLLTOP */
    $(window).scroll(function(){
-      if ($(document).scrollTop() > 500) {
+      if ($(document).scrollTop() > 150) {
         $('.hamb-top, .hamb-middle, .hamb-bottom').css({"background-color":"black", "margin-right":"20%"}); 
        
       }

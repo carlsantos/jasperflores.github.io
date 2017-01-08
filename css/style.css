@@ -55,18 +55,26 @@
 
 #about { color: #000;}
 .about-panel { padding:0; }
-.left-panel-img, .right-panel-img { padding: 0; z-index: -1;}
+.left-panel-img, .right-panel-img { padding: 0;}
 
-.left-panel-img > img,
+.left-panel-img > img, 
 .right-panel-img > img {
   width: 49.5vw;
   height: 100vh;
 }
 
+
 hr { 
   margin: 15% 10% 0;
 }
-
+.jumbotrons { 
+  height: 100%;
+  width: 100%;
+  background: url("../content/img/header.jpg");
+  background-size: 110% 110%;
+  opacity:.8;
+  margin-bottom: 0!important;
+}
 .left-panel-content,
 .right-panel-content {
    padding: 13% 5% 5%;

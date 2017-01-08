@@ -7,7 +7,6 @@ $(document).ready(function () {
     trigger.click(function () {
       hamburger_cross();
     });
-
     function hamburger_cross() {
       if (isClosed == true) {
         overlay.hide();
@@ -18,8 +17,7 @@ $(document).ready(function () {
         overlay.show();
         trigger.removeClass('is-closed');
         trigger.addClass('is-open');
-        isClosed = true;
-      }
+        isClosed = true;      }
   }
   $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
@@ -41,7 +39,7 @@ $(document).ready(function () {
   /* WINDOWS.SCROLLTOP */
    $(window).scroll(function(){
       if ($(document).scrollTop() > 80) {
-        $('.hamburger').css({"background-color":"black", "margin-left":"20%"}); 
+        $('#page-content-wrapper button').css({"background-color":"#000", "margin-left":"20%"}); 
        
       }
       else 

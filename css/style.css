@@ -1,12 +1,11 @@
 body {
-  background: #F1F3FA;
+  background: #34495e
 }
 
 /* Profile container */
 .profile {
   margin: 20px 0;
   width: 100%;
-  
 }
 
 /* Profile sidebar */
@@ -103,6 +102,6 @@ footer {
 
 footer ul { list-style-type: none; }
 .icons li a{ text-decoration: none; }
-.inner { margin: 0 15%; }
-.icons { font-size: 30px; }
+.icons { font-size: 30px; margin: 0 15%;}
 .label { color: #5a7391; }
+.copyright {  width: 110%; }

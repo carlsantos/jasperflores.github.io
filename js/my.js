@@ -1,29 +1,9 @@
 $(document).ready(function () {
   /* SIDEBAR NAVIGATION */
-  var trigger = $('.hamburger'),
-      overlay = $('.overlay'),
-      isClosed = false;
-
-    trigger.click(function () {
-      hamburger_cross();
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
     });
-
-    function hamburger_cross() {
-      if (isClosed == true) {
-        overlay.hide();
-        trigger.removeClass('is-open');
-        trigger.addClass('is-closed');
-        isClosed = false;
-      } else {
-        overlay.show();
-        trigger.removeClass('is-closed');
-        trigger.addClass('is-open');
-        isClosed = true;
-      }
-  }
-  $('[data-toggle="offcanvas"]').click(function () {
-        $('#wrapper').toggleClass('toggled');
-  });
 
   /* INTERACTIVE OBJECT */
   var movementStrength = 25;
@@ -39,17 +19,7 @@ $(document).ready(function () {
   });
 
   /* WINDOWS.SCROLLTOP */
-   $(window).scroll(function(){
-      if ($(document).scrollTop() > 150) {
-        $('.hamb-top, .hamb-middle, .hamb-bottom').css({"background-color":"black", "margin-right":"20%"}); 
-       
-      }
-      else 
-      {
-         $('.hamb-top, .hamb-middle, .hamb-bottom').css({"background-color":"white"}); 
-         $('.hamburger-container').css({"background-color":"transparent"});
-      }
-   });
+  
 
    /* Loading Icon  */
   
